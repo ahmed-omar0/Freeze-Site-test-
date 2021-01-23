@@ -1,0 +1,38 @@
+section.new-product{
+    background-color:rgb(235 ,231 ,232);
+    display: flex;
+    justify-content: space-around;
+    padding: 0 100px;
+    div{
+        width: 30%;
+        margin: 48px 0 0 10%;
+        h1{
+            color:rgb(122 ,102 ,102);
+            font: normal normal normal ultra-expanded 17px/ 20px lato-bold-webfont;
+        }
+        h2{
+            color:rgb(227 ,42 ,98);
+            font: normal normal normal 27px/ 23px magra-bold-webfont;
+        }
+        p{
+            color: rgb(122 ,102, 102);
+            font: normal normal normal normal 14px/ 24px roboto-regular-webfont;
+            margin: 0;
+            padding: 0;
+            width: 560px;
+        }
+    }
+    @media screen and (max-width: 992px){
+        padding:0;
+        margin: 0;
+        display: block;
+        div{
+            padding-top: 20px;
+            width: 100%;
+            margin: 0 5px;
+            p{
+                width: 300px;
+            }
+        }
+    }
+}

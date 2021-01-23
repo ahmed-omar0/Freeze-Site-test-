@@ -1,0 +1,83 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 70px;
+    padding: 20px 0;
+    background: rgb(238 ,235 ,236);
+    a{
+        margin-top: 2px;
+    }
+    ul{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+        padding: 0;
+        margin-bottom: 10px;
+        li{
+            color: rgb(122 ,102, 102);
+            font: normal small-caps normal 23px/ 20px lato-regular-webfont;
+            transition: color .2s linear;
+            cursor: pointer;
+            &:hover{
+                color: rgb(200 ,193, 13);
+            }
+            &.active{
+                color: rgb(200 ,193, 13);
+            }
+        }
+    }
+    .menu-icons{  /*responsive menu icon*/
+        display: none;
+        cursor: pointer;
+        span{
+            display: block;
+            padding: 4px 25px;
+            border-radius: 10px;
+            background-color: #F2184F;
+            margin: 5px;
+            transition: transform .5s linear;
+            &.open:first-of-type{
+                transform:rotate(-45deg);
+                margin:-6px;
+            }
+            &.open:nth-child(2){
+                transform:rotate(45deg);
+                margin:-6px;
+            }
+            &.close{
+                transform:rotate(0deg);
+                margin: 5px;
+            }
+            &.hidden{
+                display: none;
+            }
+        }
+    }
+    @media only screen and (max-width : 1199.99px) {
+        padding: 5px 25px;
+        ul{
+            transform: translate(120%, 190px);
+            transition: transform .5s linear;
+        }
+        ul.slide-left{
+            z-index: 50;
+            transform: translate(0, 190px);
+            flex-flow: column wrap;
+            min-width: 165px;
+            text-align: center;
+            li{
+                background-color: rgba(204 ,60 ,104 , .91);
+                border-bottom: 1px solid rgb(255,255,255);
+                color: white;
+                padding: 20px 10px 10px;
+                height: 20px;
+                width: 100%;
+            }
+        }
+        .menu-icons{
+            display: block;
+        }
+    }
+}           
