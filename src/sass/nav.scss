@@ -58,8 +58,12 @@ nav{
     @media only screen and (max-width : 1199.99px) {
         padding: 5px 25px;
         ul{
-            transform: translate(120%, 190px);
+            transform: translate(200px, 190px);
             transition: transform .5s linear;
+            li{
+                display: none;
+                opacity: 0;
+            }
         }
         ul.slide-left{
             z-index: 50;
@@ -68,6 +72,8 @@ nav{
             min-width: 165px;
             text-align: center;
             li{
+                display: block;
+                opacity: 1;
                 background-color: rgba(204 ,60 ,104 , .91);
                 border-bottom: 1px solid rgb(255,255,255);
                 color: white;
