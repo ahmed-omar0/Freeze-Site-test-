@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import logo from "../../images/logo.png";
+import logo from "../images/logo.png";
+import {NavLink} from 'react-router-dom'
 
 class Navbar extends Component{
     constructor(props){
@@ -22,12 +23,24 @@ class Navbar extends Component{
                     <img src={logo} alt="logo" width="135"/>
                 </a>
                 <ul ref={this.menuRef}>
-                    <li className="active">home</li>
-                    <li>about</li>
-                    <li>product</li>
-                    <li>blog</li>
-                    <li>single-post</li>
-                    <li>contact us</li>
+                    <li>
+                        <NavLink exact to="/">home</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/about">about</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/product">product</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/blog">blog</NavLink>
+                    </li>
+                    <li> 
+                        <NavLink to="/single-post">single-post</NavLink>
+                    </li>
+                    <li> 
+                        <NavLink to="/contact-us">contact us</NavLink>
+                    </li>
                 </ul>
                 <div class="menu-icons"  onClick={this.menuIcons}>
                     <span ref={this.iconRef1}></span>

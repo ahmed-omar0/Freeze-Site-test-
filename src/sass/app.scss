@@ -26,10 +26,15 @@
 }
 /*----------------------------------------End-Fonts---------------------------------------*/
 @import 'nav.scss';
-@import 'main.scss';
-@import 'newProduct.scss';
-@import 'icons.scss';
 @import 'footer.scss';
+/**************************Start Home Style**********************/
+@import './home/main.scss';
+@import './home/newProduct.scss';
+@import './home/icons.scss';
+/**************************Start About Style**********************/
+@import './about/header.scss';
+@import './about/body.scss';
+
 body{
     margin: 0;
 }

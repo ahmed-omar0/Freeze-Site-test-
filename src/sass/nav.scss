@@ -16,15 +16,18 @@ nav{
         padding: 0;
         margin-bottom: 10px;
         li{
-            color: rgb(122 ,102, 102);
             font: normal small-caps normal 23px/ 20px lato-regular-webfont;
-            transition: color .2s linear;
             cursor: pointer;
-            &:hover{
-                color: rgb(200 ,193, 13);
-            }
-            &.active{
-                color: rgb(200 ,193, 13);
+            a{
+                color: rgb(122 ,102, 102);
+                text-decoration: none;
+                transition: color .2s linear;
+                &:hover{
+                    color: rgb(200 ,193, 13);
+                }
+                &.active{
+                    color: rgb(200 ,193, 13);
+                }
             }
         }
     }
@@ -76,7 +79,9 @@ nav{
                 opacity: 1;
                 background-color: rgba(204 ,60 ,104 , .91);
                 border-bottom: 1px solid rgb(255,255,255);
-                color: white;
+                a{
+                    color: white;
+                }
                 padding: 20px 10px 10px;
                 height: 20px;
                 width: 100%;
