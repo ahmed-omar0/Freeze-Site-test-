@@ -1,0 +1,43 @@
+section.body{
+    display: flex;
+    width: 65%;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    .aside-text{
+        width: 25.3%;
+        padding-top: 70px;
+        h2{
+            color: rgb(227 ,42 ,98);
+            font: normal normal normal 28px/ 28px magra-bold-webfont;
+        }
+        p{
+            color: rgb(122 ,102 ,102);
+            font: normal normal normal 14px/ 26px roboto-regular-webfont;
+            text-align: left;
+            width: 190px;
+        }
+    }
+    @for $i from 1 through 9{
+        .item-#{$i}{
+            text-align: center;
+            margin-left: 15px;
+            h3{
+                color: rgb(227, 42, 98);
+                font: normal normal normal 20px/ 24px lato-regular-webfont;
+                text-transform: uppercase;
+            }
+        }
+    }
+    @media screen and (max-width: 991.99px){
+        flex-direction: column;
+        .aside-text{
+            width: 100%;
+            text-align: center;
+            p{
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+}

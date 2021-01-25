@@ -34,7 +34,9 @@
 /**************************Start About Style**********************/
 @import './about/header.scss';
 @import './about/body.scss';
-
+/**************************Start Product Style**********************/
+@import './product/header.scss';
+@import './product/body.scss';
 body{
     margin: 0;
 }

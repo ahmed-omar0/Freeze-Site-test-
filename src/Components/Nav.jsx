@@ -30,7 +30,7 @@ class Navbar extends Component{
                         <NavLink to="/about">about</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/product">product</NavLink>
+                        <NavLink to="/products">products</NavLink>
                     </li>
                     <li>
                         <NavLink to="/blog">blog</NavLink>

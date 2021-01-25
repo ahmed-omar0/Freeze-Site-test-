@@ -2,8 +2,8 @@ import React from 'react';
 import Header from './header';
 import Body from './body';
 
-const AboutUs = () => {
-    return ( 
+const Products = () => {
+    return (
         <React.Fragment>
             <Header/>
             <Body/>
@@ -11,4 +11,4 @@ const AboutUs = () => {
     );
 }
  
-export default AboutUs;
+export default Products;
