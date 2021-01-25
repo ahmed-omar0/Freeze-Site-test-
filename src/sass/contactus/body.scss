@@ -1,0 +1,56 @@
+section.contact-us-body{
+    width: 100%;
+    div.location{
+        width: 100%;
+        background: url('../../images/map.jpg') no-repeat center top rgb(181, 170 ,173);
+        padding: 20px 0;
+        .location-content{
+            display: flex;
+            flex-wrap: wrap;
+            width: 50%;
+            padding: 20px;
+            margin: auto;
+            background: url('../../images/bg-transparent.png') repeat;
+            img{
+                margin: auto;
+            }
+            .location-text{
+                margin-left: 10px;
+                h2{
+                    color: rgb(203 ,51 ,98);
+                    font: normal normal normal 24px/ 24px lato-regular-webfont;
+                    width: 510px;
+                }
+                p{
+                    color: rgb(122 ,102, 102);
+                    font: normal normal normal 14px/ 24px roboto-regular-webfont;
+                    width: 510px;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 785.99px){
+        div.location{
+            .location-content{
+                width: 80%;
+                .location-text{
+                    h2,p{
+                        width: 280px;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (min-width: 786px) and (max-width: 991.99px){
+        div.location{
+            .location-content{
+                width: 70%;
+                .location-text{
+                    h2,p{
+                        width: 400px;
+                    }
+                }
+            }
+        }
+    }
+}

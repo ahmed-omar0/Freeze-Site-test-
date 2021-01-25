@@ -1,6 +1,13 @@
+import React from 'react';
+import Header from './header';
+import Body from './body';
+
 const ContactUs = () => {
     return ( 
-        <h1>It's under construction</h1>
+        <React.Fragment>
+            <Header/>
+            <Body/>
+        </React.Fragment>
     );
 }
  

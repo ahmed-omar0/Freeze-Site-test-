@@ -40,6 +40,13 @@
 /**************************Start blog Style**********************/
 @import './blog/header.scss';
 @import './blog/body.scss';
+/**************************Start single post Style**********************/
+@import './single-post/header.scss';
+@import './single-post/body.scss';
+/**************************Start contactus Style**********************/
+@import './contactus/header.scss';
+@import './contactus/body.scss';
+
 body{
     margin: 0;
 }
