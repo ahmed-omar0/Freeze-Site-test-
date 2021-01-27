@@ -29,6 +29,79 @@ section.contact-us-body{
             }
         }
     }
+    div.body-footer{
+        display: flex;
+        flex-wrap: wrap;
+        width: 70%;
+        margin: 50px auto 90px auto;
+        form{
+            fieldset{
+                border: none;
+                display: flex;
+                flex-direction: column;
+                legend{
+                    color: rgb(203, 51, 98);
+                    font: normal normal normal 24px/ 24px lato-regular-webfont;
+                    margin-bottom: 30px;
+                }
+                .sr-only{
+                    display: none;
+                }
+                input{
+                    background: none;
+                    border: 1px solid rgb(182, 173, 176);
+                    color: rgb(122, 102 ,102);
+                    font: normal normal normal 14px/ 38px lato-regular-webfont;
+                    height: 38px;
+                    margin: 0 0 8px;
+                    padding: 0 0 0 10px;
+                    width: 548px;
+                    overflow: auto;
+                    &#submit{
+                        background: none;
+                        border: 2px solid rgb(197, 171 ,180);
+                        color: rgb(165 ,131 ,142);
+                        cursor: pointer;
+                        font: normal normal normal 16px/ 36px lato-bold-webfont;
+                        height: 40px;                    
+                        padding: 0;
+                        margin: 10px auto;
+                        text-align: center;
+                        text-transform: uppercase;
+                        width: 141px;
+                        transition: background-color .3s ease-in-out;
+                        &:hover{
+                            background-color: rgb(200, 193, 13);
+                            color: white;
+                            border: none;
+                        }
+                    }
+                }
+                #textarea{
+                        height: 270px;
+                        padding: 7px 0 0 10px;
+                        margin: 15px 1px;
+                        resize: none;
+                        text-align: left;
+                        width: 548px;
+                    }
+            }
+        }
+        aside{
+            background-color: rgb(239 ,237, 238);
+            padding: 0 30px;
+            width: 210px;
+            height: 208px;
+            h2{
+                color: rgb(203 ,51 ,98);
+                font: normal normal normal 24px/ 24px lato-regular-webfont;
+            }
+            p{
+                color: rgb(122 ,102, 102);
+                font: normal normal normal 14px/ 24px roboto-regular-webfont;
+            }
+        }
+    }
     @media screen and (max-width: 785.99px){
         div.location{
             .location-content{
@@ -50,6 +123,24 @@ section.contact-us-body{
                         width: 400px;
                     }
                 }
+            }
+        }
+    }
+    @media screen  and (max-width: 991.99px){
+        div.body-footer{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            form{
+                margin: auto;
+                fieldset{
+                    input, #textarea{
+                        width: 90%;
+                    }
+                }
+            }
+            aside{
+                margin: auto;
             }
         }
     }

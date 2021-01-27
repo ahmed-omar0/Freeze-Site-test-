@@ -12,18 +12,20 @@ import Footer from './Components/footer';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Navbar/>
-      <Switch>
-        <Route exact path="/" component={Home}/>
-        <Route path="/about" component={About}/>
-        <Route path="/products" component={Products}/>
-        <Route path="/blog" component={Blog}/>
-        <Route path="/single-post" component={SinglePost}/>
-        <Route path="/contact-us" component={ContactUs}/>
-      </Switch>
+    <React.Fragment>
+      <BrowserRouter>
+        <Navbar/>
+        <Switch>
+          <Route exact path="/" component={Home}/>
+          <Route path="/about" component={About}/>
+          <Route path="/products" component={Products}/>
+          <Route path="/blog" component={Blog}/>
+          <Route path="/single-post" component={SinglePost}/>
+          <Route path="/contact-us" component={ContactUs}/>
+        </Switch>
+      </BrowserRouter>
       <Footer/>
-    </BrowserRouter>
+    </React.Fragment>
   );
 }
 
