@@ -1,5 +1,6 @@
 import onDiet from '../../images/on-diet.png'
 import strwberry from '../../images/strwberry-delights.jpg'
+/*import berries from '../../images/berries.png'*/
 import {NavLink} from 'react-router-dom'
 
 
