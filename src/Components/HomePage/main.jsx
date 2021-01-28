@@ -1,12 +1,14 @@
 import bg from '../../images/bg-home.jpg'
+import {NavLink} from 'react-router-dom'
+
 function Main (){
     return(
         <main>
             <img src={bg} alt="bg"/>
             <div>
-                <a href="#product">
+                <NavLink to="products">
                     freeze delight
-                </a>
+                </NavLink>
             </div>
         </main>
     )
